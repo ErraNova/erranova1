@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Mohamed Erra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="scroll-to-top" id="scrollToTop"></div>
+
+    <div class="theme-toggle" id="themeToggle">
+        <span class="icon">🌙</span>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <header>
+        <div class="header-wrapper">
+            <h1>
+                <img src="logo.png" alt="Logo ErraNoVa">
+            </h1>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2>Bonjour, je suis <span class="highlight">Mohamed</span></h2>
+                    <p>Développeur Full Stack Java passionné par la création d'applications web modernes et performantes.</p>
+                    <div class="cta-buttons">
+                        <a href="projects.html" class="btn btn-primary">🚀 Voir mes projets</a>
+                        <a href="contact.html" class="btn btn-secondary">📧 Me contacter</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-visual">
+                        <div class="code-animation">
+                            <div class="code-line"><span class="keyword">public class</span> <span class="class-name">Developer</span> {</div>
+                            <div class="code-line">    <span class="keyword">private</span> String name = <span class="string">"Mohamed Erra"</span>;</div>
+                            <div class="code-line">    <span class="keyword">private</span> String[] skills = {</div>
+                            <div class="code-line">        <span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>, <span class="string">"JSP"</span></div>
+                            <div class="code-line">    };</div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="feature-card" onclick="toggleCard(this)">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop" alt="Développement Web" class="card-image">
+                        <div class="image-overlay">
+                            <div class="feature-icon">💻</div>
+                            <h3 class="image-title">Développement Web</h3>
+                            <p class="click-hint">Cliquez pour en savoir plus</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="close-button" onclick="event.stopPropagation(); toggleCard(this.parentElement.parentElement)">×</div>
+                        <div class="content-icon">💻</div>
+                        <h3>Développement Web</h3>
+                        <p>Création d'applications web robustes avec Java, JSP et les dernières technologies front-end.</p>
+                        <ul class="feature-list">
+                            <li>Java / Java EE</li>
+                            <li>Spring Boot & Spring MVC</li>
+                            <li>JSP & Servlets</li>
+                            <li>API RESTful</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card" onclick="toggleCard(this)">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Design Moderne" class="card-image">
+                        <div class="image-overlay">
+                            <div class="feature-icon">🎨</div>
+                            <h3 class="image-title">Design Moderne</h3>
+                            <p class="click-hint">Cliquez pour en savoir plus</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="close-button" onclick="event.stopPropagation(); toggleCard(this.parentElement.parentElement)">×</div>
+                        <div class="content-icon">🎨</div>
+                        <h3>Design Moderne</h3>
+                        <p>Interfaces utilisateur élégantes et intuitives avec une attention particulière à l'expérience utilisateur.</p>
+                        <ul class="feature-list">
+                            <li>UI/UX Design</li>
+                            <li>Responsive Design</li>
+                            <li>CSS3 & Animations</li>
+                            <li>Design Systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-card" onclick="toggleCard(this)">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Performance" class="card-image">
+                        <div class="image-overlay">
+                            <div class="feature-icon">⚡</div>
+                            <h3 class="image-title">Performance</h3>
+                            <p class="click-hint">Cliquez pour en savoir plus</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="close-button" onclick="event.stopPropagation(); toggleCard(this.parentElement.parentElement)">×</div>
+                        <div class="content-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Optimisation des performances pour des applications rapides et réactives.</p>
+                        <ul class="feature-list">
+                            <li>Optimisation Backend</li>
+                            <li>Cache Management</li>
+                            <li>Lazy Loading</li>
+                            <li>Code Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+<footer>
+    <div class="container">
+        <p>© 2025 <span class="company-name">Erranova</span>. Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

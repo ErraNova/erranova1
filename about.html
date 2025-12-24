@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Mohamed Erra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="scroll-to-top" id="scrollToTop"></div>
+    <div class="theme-toggle" id="themeToggle">
+        <span class="icon">🌙</span>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html" class="active">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    
+    <header>
+        <div class="header-wrapper">
+            <h1><img src="logo.png" alt="Logo"></h1>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="about.html" class="active">À propos</a>
+                <a href="projects.html">Projets</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="padding-top: 40px;">
+            <section class="presentation-section">
+                <h2>À Propos</h2>
+                <p class="presentation-text">
+                    Développeur passionné et créatif, je me spécialise dans la création de solutions web 
+                    innovantes et performantes. Mon expertise couvre le développement full-stack avec une 
+                    attention particulière portée à l'expérience utilisateur et aux technologies modernes.
+                </p>
+
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="profile.png" alt="Mohamed" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'font-size: 4em; color: var(--text-secondary);\'>👨‍💻</div>'">
+                    </div>
+                    <h3>Mohamed</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </section>
+
+            <section class="process-section">
+                <h2>Notre Processus</h2>
+                <p class="process-description">
+                    Une méthodologie éprouvée en trois étapes pour garantir le succès de vos projets
+                </p>
+
+                <div class="process-grid">
+                    <div class="process-card design">
+                        <h3>🎨 Design</h3>
+                        <p>Création d'interfaces modernes et intuitives centrées sur l'utilisateur</p>
+                    </div>
+
+                    <div class="process-card develop">
+                        <h3>⚙️ Develop</h3>
+                        <p>Développement avec les technologies les plus récentes et performantes</p>
+                    </div>
+
+                    <div class="process-card deliver">
+                        <h3>🚀 Deliver</h3>
+                        <p>Livraison rapide avec support continu et maintenance</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <h2>Nos Réalisations</h2>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projets Réussis</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Partenaires de Confiance</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Années d'Expérience</div>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="cta-button">Nous Contacter</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>© 2025 <span class="company-name">Erranova</span>. Tous droits réservés.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
